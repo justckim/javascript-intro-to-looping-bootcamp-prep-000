@@ -20,6 +20,7 @@ function whileLoop(number) {
   return "done"
 }
 
+<<<<<<< HEAD
 function doWhileLoop(array) {
   
   function maybeTrue() {
@@ -32,3 +33,16 @@ function doWhileLoop(array) {
   
   return array
 }
+=======
+function maybeTrue() {
+    return Math.random() >= 0.5
+}
+  
+function doWhileLoop(array) {
+  
+  do{
+    array.pop()
+  } while (array.length > 0 && maybeTrue())
+}
+
+>>>>>>> 300183a7aef779023df1f2c8acf67440cfcb82c5
